@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Is NTP installed
+    yum: name=ntp state=present
+
+  - name: Is NTP running
+    service: name=ntpd state=started enabled=yes
