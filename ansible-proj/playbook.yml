@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: centos
   become: yes
   tasks:
   - name: Is NTP installed
